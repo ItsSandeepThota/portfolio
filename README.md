@@ -9,4 +9,4 @@ Personal portfolio website of **Sandeep Thota**, Senior Automation Engineer, Lea
 - Vanilla JS
 
 ## Live Preview
-Deployable directly via Vercel or GitHub Pages.
+🚀 **[https://sandeep-thota-portfolio.vercel.app](https://sandeep-thota-portfolio.vercel.app)**
