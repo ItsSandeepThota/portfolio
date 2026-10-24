@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Thota | Senior Automation & AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Sandeep Thota - Senior Automation Engineer, Lead RPA Developer, and Intelligent Automation Specialist with 8+ years of experience across Amazon, Deloitte, Cognizant, and CGI.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            500: '#10b981',
+                            600: '#059669',
+                        },
+                        accent: {
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        code, pre { font-family: 'JetBrains Mono', monospace; }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-effect {
+            position: relative;
+        }
+        .glow-effect::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(90deg, #0ea5e9, #10b981);
+            border-radius: inherit;
+            z-index: -1;
+            opacity: 0.15;
+            transition: opacity 0.3s ease;
+        }
+        .glow-effect:hover::before {
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Top Glow Gradient Background -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-b from-sky-500/10 via-emerald-500/5 to-transparent blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-sky-500 to-emerald-400 flex items-center justify-center font-bold text-slate-950 text-base shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+                    ST
+                </div>
+                <div>
+                    <span class="text-base font-bold text-white tracking-tight group-hover:text-sky-400 transition-colors">Sandeep Thota</span>
+                    <span class="hidden sm:inline-block text-xs text-slate-400 ml-2 px-2 py-0.5 rounded-full bg-slate-800 border border-slate-700">8+ YOE</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Architecture</a>
+                <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+                <a href="#certifications" class="hover:text-sky-400 transition-colors">Certifications</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="mailto:Sandeepthota007@gmail.com" class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm transition-all shadow-md shadow-sky-500/20 hover:shadow-sky-500/30 flex items-center space-x-1.5">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    <span>Contact Me</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+
+        <!-- Hero Section -->
+        <section id="about" class="pt-6 sm:pt-12 text-center md:text-left grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-8 space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold tracking-wide">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Senior Automation Engineer &bull; AI & RPA Specialist</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Architecting Enterprise <br class="hidden sm:inline" />
+                    <span class="bg-gradient-to-r from-sky-400 via-emerald-300 to-teal-200 bg-clip-text text-transparent">
+                        Intelligent Automation & AI Systems
+                    </span>
+                </h1>
+
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+                    8+ years of engineering experience delivering enterprise-scale solutions across <span class="text-white font-medium">Amazon</span>, <span class="text-white font-medium">Deloitte</span>, <span class="text-white font-medium">Cognizant</span>, and <span class="text-white font-medium">CGI</span>. Specializing in bridging <strong>UiPath RPA</strong> with <strong>AWS Serverless pipelines</strong>, <strong>Azure Cognitive Services / Document Intelligence</strong>, and <strong>Azure OpenAI (GPT-4)</strong> to drive massive operational scale.
+                </p>
+
+                <!-- Quick Action Buttons -->
+                <div class="flex flex-wrap gap-3.5 justify-center md:justify-start pt-2">
+                    <a href="#projects" class="px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm border border-slate-700 hover:border-slate-600 transition-all flex items-center space-x-2">
+                        <span>View Architecture Projects</span>
+                        <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sandeep-thota/" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 font-medium text-sm border border-blue-500/30 transition-all flex items-center space-x-2">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <a href="https://github.com/ItsSandeepThota" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 font-medium text-sm border border-slate-800 transition-all flex items-center space-x-2">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Info Card -->
+            <div class="md:col-span-4">
+                <div class="glass-panel p-6 rounded-2xl glow-effect space-y-4">
+                    <div class="flex items-center space-x-3 pb-3 border-b border-slate-800">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-sky-500 to-emerald-400 p-0.5">
+                            <div class="w-full h-full rounded-full bg-slate-900 flex items-center justify-center font-bold text-white text-lg">
+                                ST
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-bold text-white">Sandeep Thota</h3>
+                            <p class="text-xs text-slate-400">Hyderabad, India</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2.5 text-xs text-slate-300">
+                        <div class="flex justify-between py-1 border-b border-slate-800/60">
+                            <span class="text-slate-400">Current Company:</span>
+                            <span class="font-semibold text-white">Amazon (AR FinOps)</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-slate-800/60">
+                            <span class="text-slate-400">Total Experience:</span>
+                            <span class="font-semibold text-emerald-400">8+ Years</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-slate-800/60">
+                            <span class="text-slate-400">Core Stack:</span>
+                            <span class="font-semibold text-sky-400">UiPath &bull; AWS &bull; Azure &bull; GenAI</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-slate-800/60">
+                            <span class="text-slate-400">Key Focus:</span>
+                            <span class="font-semibold text-white">Serverless &bull; IDP &bull; REFramework</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span class="text-slate-400">Email:</span>
+                            <span class="font-mono text-slate-300 truncate max-w-[170px]">Sandeepthota007@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proven Metrics & Impact Counters -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="glass-panel p-5 rounded-xl border border-slate-800 text-center hover:border-slate-700 transition-colors">
+                <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-300">8+ Yrs</div>
+                <div class="text-xs text-slate-400 mt-1 font-medium">Enterprise Engineering</div>
+            </div>
+            <div class="glass-panel p-5 rounded-xl border border-slate-800 text-center hover:border-slate-700 transition-colors">
+                <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">2.5 FTE</div>
+                <div class="text-xs text-slate-400 mt-1 font-medium">~2,250 Annual Hrs Saved (Amazon)</div>
+            </div>
+            <div class="glass-panel p-5 rounded-xl border border-slate-800 text-center hover:border-slate-700 transition-colors">
+                <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-300">~50%</div>
+                <div class="text-xs text-slate-400 mt-1 font-medium">Exception Reduction (Azure OpenAI)</div>
+            </div>
+            <div class="glass-panel p-5 rounded-xl border border-slate-800 text-center hover:border-slate-700 transition-colors">
+                <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-emerald-300">98%+</div>
+                <div class="text-xs text-slate-400 mt-1 font-medium">Production Bot SLA Compliance</div>
+            </div>
+        </section>
+
+        <!-- Core Technical Pillars -->
+        <section id="skills" class="space-y-6">
+            <div class="space-y-2">
+                <div class="text-xs font-bold uppercase tracking-wider text-sky-400 font-mono">Skill Competencies</div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Technical Architecture & Stack</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-800/80 hover:border-sky-500/40 transition-all space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">RPA & Enterprise Orchestration</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        UiPath Studio / StudioX, Orchestrator Queues & Assets, Robotic Enterprise Framework (REFramework), Dispatcher-Performer pattern, Automation Anywhere (AA v11), Blue Prism, Computer Vision.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-1">
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">UiPath</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">REFramework</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Orchestrator</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-800/80 hover:border-emerald-500/40 transition-all space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">AI & Document Intelligence</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Azure OpenAI (GPT-4), Prompt Engineering, Azure Cognitive Services, Azure AI Document Intelligence (Form Recognizer / Document Analyzer), Microsoft Copilot Studio, GitHub Copilot.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-1">
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Azure OpenAI</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Doc Analyzer</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Copilot Studio</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-800/80 hover:border-indigo-500/40 transition-all space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Cloud & Serverless Pipelines</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        AWS Lambda, Amazon S3, AWS Glue ETL, Amazon DynamoDB, AWS QuickSight, AWS CloudFormation, Microsoft Azure Logic Apps, REST API Integration.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-1">
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">AWS Lambda</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Glue</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Logic Apps</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-800/80 hover:border-cyan-500/40 transition-all space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Programming & Data Prep</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Python (Automation scripting, data transformation layers, Pandas), VB.NET, C#, SQL queries, VBA Macros, Power Query, JSON data structures.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-1">
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Python</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">VB.NET / C#</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-800/80 hover:border-amber-500/40 transition-all space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">DevOps, CI/CD & Governance</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Amazon Brazil Pipelines, Azure DevOps, Git, GitHub Actions, AWS CloudFormation (IaC), UiPath Test Suite, Rigorous Peer Code Reviews.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-1">
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Amazon Brazil</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Azure DevOps</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Code Reviews</span>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-800/80 hover:border-rose-500/40 transition-all space-y-3">
+                    <div class="w-10 h-10 rounded-lg bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Enterprise Systems & ERP</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        SAP ERP (ECC, S/4HANA PO & Warehouse modules), Citrix Hosted Environments, Amazon Collect Internal App, Microsoft 365, Power BI Dashboards.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-1">
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">SAP ERP</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Citrix</span>
+                        <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-800 text-slate-300">Power BI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Architecture & Projects -->
+        <section id="projects" class="space-y-6">
+            <div class="space-y-2">
+                <div class="text-xs font-bold uppercase tracking-wider text-sky-400 font-mono">Case Studies</div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Featured Architectural Implementations</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Project 1: Amazon FinOps -->
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-slate-700 transition-all space-y-4">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <div class="flex items-center space-x-3">
+                            <span class="px-2.5 py-1 rounded bg-amber-500/10 border border-amber-500/30 text-amber-400 font-mono text-xs font-bold">Amazon AR FinOps</span>
+                            <h3 class="text-xl font-bold text-white">Serverless Cloud Automation Backbone</h3>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-semibold text-xs border border-emerald-500/30">
+                            Reclaimed 2.5 FTE &bull; ~2,250 Hrs/Yr Saved
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Architected an event-driven serverless communication and collection pipeline combining UiPath bots with AWS services (Lambda, Glue, DynamoDB, S3) to automate monthly processing of ~300 high-complexity invoices. Replaced a 5-6 minute manual verification workflow per invoice with instant serverless execution and automated dunning via Amazon Collect.
+                    </p>
+
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 space-y-1.5">
+                        <div class="text-slate-400 font-semibold">// Architecture Pipeline Flow:</div>
+                        <div class="text-sky-400">AWS Glue (Daily Extraction) &rarr; S3 Event Trigger &rarr; AWS Lambda (Parsing &amp; Validation) &rarr; Amazon Collect (POC Retrieval) &rarr; UiPath Dunning Bot &rarr; DynamoDB &amp; QuickSight Dashboards</div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">AWS Lambda</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">AWS Glue</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">DynamoDB</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">AWS QuickSight</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">Amazon Brazil CI/CD</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">UiPath</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Deloitte GenAI & IDP -->
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-slate-700 transition-all space-y-4">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <div class="flex items-center space-x-3">
+                            <span class="px-2.5 py-1 rounded bg-sky-500/10 border border-sky-500/30 text-sky-400 font-mono text-xs font-bold">Deloitte US</span>
+                            <h3 class="text-xl font-bold text-white">GenAI & Intelligent Document Processing Pipeline</h3>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-semibold text-xs border border-emerald-500/30">
+                            ~50% Exception Reduction
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Replaced manual invoice and contract validation by deploying Azure AI Document Intelligence (Document Analyzer) with Azure OpenAI (GPT-4) inside UiPath workflows. Implemented robust few-shot prompt engineering to classify edge cases, extract complex nested tables, and automate downstream decision-making.
+                    </p>
+
+                    <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 space-y-1.5">
+                        <div class="text-slate-400 font-semibold">// Intelligent Decision Engine:</div>
+                        <div class="text-emerald-400">Incoming Document &rarr; Azure Doc Intelligence (Analyzer) &rarr; Azure OpenAI GPT-4 API (Entity &amp; Intent Verification) &rarr; UiPath Bot (System Entry) &rarr; Azure Logic Apps &amp; Teams Copilot</div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">Azure OpenAI (GPT-4)</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">Azure Document Intelligence</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">UiPath Orchestrator</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">Azure Logic Apps</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">Copilot Studio</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: CGI Volvo IT -->
+                <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 hover:border-slate-700 transition-all space-y-4">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <div class="flex items-center space-x-3">
+                            <span class="px-2.5 py-1 rounded bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 font-mono text-xs font-bold">CGI / Volvo IT Group</span>
+                            <h3 class="text-xl font-bold text-white">Distributed Multi-Bot SAP Automation Platform</h3>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-semibold text-xs border border-emerald-500/30">
+                            60% Faster Turnaround
+                        </span>
+                    </div>
+
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        Architected a 3-tier distributed bot platform decoupling email ingestion, data transformation, and SAP ERP updates. Integrated Python data preparation scripts directly with UiPath for heavy data manipulation, accompanied by executive Power BI dashboards for real-time manufacturing visibility.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">UiPath REFramework</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">Python Scripting</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">SAP ERP</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">Power BI</span>
+                        <span class="px-2.5 py-1 rounded text-xs bg-slate-800 text-slate-300">Power Query</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Experience Timeline -->
+        <section id="experience" class="space-y-6">
+            <div class="space-y-2">
+                <div class="text-xs font-bold uppercase tracking-wider text-sky-400 font-mono">Work History</div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">8+ Years Enterprise Experience</h2>
+            </div>
+
+            <div class="relative border-l border-slate-800 ml-4 pl-6 sm:pl-8 space-y-8">
+                <!-- Amazon -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-sky-500 ring-4 ring-slate-950"></div>
+                    <div class="space-y-2">
+                        <div class="flex flex-wrap items-baseline justify-between gap-1">
+                            <h3 class="text-lg font-bold text-white">Senior Automation Engineer – AR FinOps</h3>
+                            <span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-2.5 py-0.5 rounded border border-sky-500/20">May 2026 – Present</span>
+                        </div>
+                        <div class="text-sm font-semibold text-slate-400">Amazon &bull; Hyderabad, India</div>
+                        <ul class="list-disc list-outside ml-4 text-xs sm:text-sm text-slate-300 space-y-1.5 leading-relaxed pt-1">
+                            <li>Architected and deployed scalable, fault-tolerant automation pipelines combining UiPath with AWS serverless services (Lambda, DynamoDB, S3, Glue), eliminating ~2,250 hours of manual effort annually and reclaiming 2.5 FTE operational capacity.</li>
+                            <li>Engineered automated communication workflows for ~300 monthly invoices, cutting manual handling from 5-6 minutes to automated execution.</li>
+                            <li>Integrated solutions with internal Amazon Collect systems and implemented closed-loop 10-day reminder cadences for debt resolution.</li>
+                            <li>Conducted technical code reviews and established CI/CD deployments using Amazon Brazil and AWS CloudFormation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Deloitte -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 ring-4 ring-slate-950"></div>
+                    <div class="space-y-2">
+                        <div class="flex flex-wrap items-baseline justify-between gap-1">
+                            <h3 class="text-lg font-bold text-white">Senior Analyst – RPA &amp; Intelligent Automation</h3>
+                            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded border border-emerald-500/20">Aug 2023 – Apr 2026</span>
+                        </div>
+                        <div class="text-sm font-semibold text-slate-400">Deloitte US (India GDC) &bull; Hyderabad, India</div>
+                        <ul class="list-disc list-outside ml-4 text-xs sm:text-sm text-slate-300 space-y-1.5 leading-relaxed pt-1">
+                            <li>Integrated Azure OpenAI (GPT-4) APIs and Azure Cognitive Services with UiPath bots, reducing exception rates by ~50%.</li>
+                            <li>Extracted and validated unstructured invoice data via Azure AI Document Intelligence (Document Analyzer).</li>
+                            <li>Engineered prompt engineering frameworks, event-driven Azure Logic Apps, and custom Teams Copilots via Copilot Studio.</li>
+                            <li>Conducted peer code reviews, enforced REFramework standards, and configured Azure DevOps CI/CD pipelines.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cognizant -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-slate-950"></div>
+                    <div class="space-y-2">
+                        <div class="flex flex-wrap items-baseline justify-between gap-1">
+                            <h3 class="text-lg font-bold text-white">Associate – Projects Engineer, Process Automation</h3>
+                            <span class="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-0.5 rounded">Sept 2022 – Aug 2023</span>
+                        </div>
+                        <div class="text-sm font-semibold text-slate-400">Cognizant Technology Solutions &bull; Hyderabad, India</div>
+                        <ul class="list-disc list-outside ml-4 text-xs sm:text-sm text-slate-300 space-y-1.5 leading-relaxed pt-1">
+                            <li>Delivered enterprise attended and unattended UiPath automations with REFramework and Orchestrator queues.</li>
+                            <li>Maintained production support and UAT for high-volume bots, maintaining >98% SLA compliance.</li>
+                            <li>Conducted PDD reviews and authored Solution Design Documents (SDDs) with client stakeholders.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CGI -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-slate-950"></div>
+                    <div class="space-y-2">
+                        <div class="flex flex-wrap items-baseline justify-between gap-1">
+                            <h3 class="text-lg font-bold text-white">Software Engineer – RPA</h3>
+                            <span class="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-0.5 rounded">June 2021 – Sept 2022</span>
+                        </div>
+                        <div class="text-sm font-semibold text-slate-400">CGI Information Technology &amp; Services &bull; On-Site</div>
+                        <ul class="list-disc list-outside ml-4 text-xs sm:text-sm text-slate-300 space-y-1.5 leading-relaxed pt-1">
+                            <li>Maintained 20+ UiPath production bots for Volvo IT Group across SAP ERP and Citrix environments.</li>
+                            <li>Architected hybrid Python + UiPath solutions, accelerating batch processing speed by 60%.</li>
+                            <li>Engineered Power BI dashboards and VBA/Power Query pipelines for real-time manufacturing KPIs.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Miracle -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-slate-950"></div>
+                    <div class="space-y-2">
+                        <div class="flex flex-wrap items-baseline justify-between gap-1">
+                            <h3 class="text-lg font-bold text-white">Jr. Software Developer – RPA</h3>
+                            <span class="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-0.5 rounded">July 2018 – June 2021</span>
+                        </div>
+                        <div class="text-sm font-semibold text-slate-400">Miracle Software Systems &bull; Hyderabad, India</div>
+                        <ul class="list-disc list-outside ml-4 text-xs sm:text-sm text-slate-300 space-y-1.5 leading-relaxed pt-1">
+                            <li>Automated SAP PO processing, inventory reconciliation, and HR workflows via UiPath Studio and Automation Anywhere.</li>
+                            <li>Implemented Dispatcher-Performer patterns and Computer Vision for Citrix-hosted SAP interfaces.</li>
+                            <li>Contributed open-source research articles on the TagUI automation framework.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Education -->
+        <section id="certifications" class="space-y-6">
+            <div class="space-y-2">
+                <div class="text-xs font-bold uppercase tracking-wider text-sky-400 font-mono">Credentials</div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Certifications &amp; Education</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Certifications List -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-800 space-y-3">
+                    <h3 class="text-base font-bold text-white flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                        <span>Professional Certifications</span>
+                    </h3>
+                    <ul class="space-y-2.5 text-xs text-slate-300">
+                        <li class="flex items-center justify-between p-2 rounded bg-slate-900/60 border border-slate-800/80">
+                            <span class="font-medium text-white">UiPath Advanced RPA Developer (v2020.4.1) &amp; Master's Level</span>
+                            <span class="text-[10px] text-sky-400 font-mono">UiPath</span>
+                        </li>
+                        <li class="flex items-center justify-between p-2 rounded bg-slate-900/60 border border-slate-800/80">
+                            <span class="font-medium text-white">Microsoft Certified: Azure AI Fundamentals (AI-900)</span>
+                            <span class="text-[10px] text-sky-400 font-mono">Microsoft</span>
+                        </li>
+                        <li class="flex items-center justify-between p-2 rounded bg-slate-900/60 border border-slate-800/80">
+                            <span class="font-medium text-white">Automation Anywhere Advanced Developer (AA v11)</span>
+                            <span class="text-[10px] text-sky-400 font-mono">AA</span>
+                        </li>
+                        <li class="flex items-center justify-between p-2 rounded bg-slate-900/60 border border-slate-800/80">
+                            <span class="font-medium text-white">Microsoft Copilot Studio Fundamentals</span>
+                            <span class="text-[10px] text-sky-400 font-mono">MS Learn</span>
+                        </li>
+                        <li class="flex items-center justify-between p-2 rounded bg-slate-900/60 border border-slate-800/80">
+                            <span class="font-medium text-white">GitHub Copilot Enterprise Practitioner</span>
+                            <span class="text-[10px] text-sky-400 font-mono">GitHub</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Education Details -->
+                <div class="glass-panel p-6 rounded-xl border border-slate-800 space-y-3">
+                    <h3 class="text-base font-bold text-white flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                        <span>Formal Education</span>
+                    </h3>
+                    <div class="p-4 rounded-lg bg-slate-900/60 border border-slate-800/80 space-y-1.5">
+                        <div class="text-sm font-bold text-white">Bachelor of Technology (B.Tech)</div>
+                        <div class="text-xs text-sky-400">Electronics &amp; Communication Engineering (ECE)</div>
+                        <div class="text-xs text-slate-400">KIET Group of Institutions (Affiliated to JNTUK) &bull; 2014 – 2018</div>
+                        <div class="text-xs text-emerald-400 font-mono pt-1">Academic Aggregate: 73.5%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="glass-panel p-8 sm:p-12 rounded-3xl border border-slate-800 text-center space-y-6 glow-effect">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                Ready to elevate your automation &amp; AI initiatives?
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                Whether you need a Senior Automation Engineer to scale serverless AWS workflows, a Lead RPA Developer to design resilient UiPath ecosystems, or an AI Engineer to integrate Azure OpenAI &amp; Document Intelligence, I am ready to deliver.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-2">
+                <a href="mailto:Sandeepthota007@gmail.com" class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-sky-500/25 flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    <span>Send Me an Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sandeep-thota/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm border border-slate-700 transition-all flex items-center space-x-2">
+                    <span>Connect on LinkedIn</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Sandeep Thota. Crafted for Senior Automation &amp; AI Engineering Excellence.</p>
+    </footer>
+
+</body>
+</html>
